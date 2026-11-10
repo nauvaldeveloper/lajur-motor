@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lajur Motor — Showroom Motor Bekas Bandung</title>
+  <meta name="description" content="Motor bekas yang sudah diinspeksi 40 titik, surat lengkap, garansi mesin 1 bulan. Lihat unit, hitung simulasi kredit, dan jadwalkan test ride lewat WhatsApp." />
+  <meta name="theme-color" content="#17191c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2317191c'/%3E%3Cpath d='M18 54 28 10h8l10 44' stroke='%23f4f4f1' stroke-width='5' fill='none'/%3E%3Cpath d='M32 16v6M32 30v6M32 44v6' stroke='%232443c9' stroke-width='4'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="demo-bar" id="demoBar" hidden>Website concept by Nauval Dev · dealer &amp; unit fiktif · <a id="demoLink" target="_blank" rel="noopener">Hubungi</a></div>
+
+  <header class="nav">
+    <div class="wrap nav__in">
+      <a href="#top" class="brand" aria-label="Lajur Motor, ke atas">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 36 16 4h8l8 32"/><path d="M20 9v4M20 18v4M20 27v4" class="lane"/></svg>
+        <span>Lajur Motor</span>
+      </a>
+      <nav class="nav__links" aria-label="Navigasi">
+        <a href="#unit">Unit tersedia</a>
+        <a href="#inspeksi">Inspeksi</a>
+        <a href="#jual">Jual / tukar tambah</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#unit" class="btn btn--blue btn--sm">Cari motor</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero__in">
+        <div>
+          <p class="eyebrow">Showroom motor bekas · Bandung</p>
+          <h1>Motor bekas yang sudah dicek, bukan cuma dicuci.</h1>
+          <p class="lead">Setiap unit lolos inspeksi 40 titik, surat dicek ke Samsat, dan hasil pemeriksaannya kami tampilkan apa adanya, termasuk lecetnya.</p>
+          <div class="hero__cta"><a href="#unit" class="btn btn--blue">Lihat unit tersedia</a><a href="#jual" class="btn btn--line">Jual motormu</a></div>
+        </div>
+        <dl class="facts" id="facts"></dl>
+      </div>
+    </section>
+
+    <section class="stock" id="unit">
+      <div class="wrap">
+        <div class="stock__head">
+          <h2>Unit tersedia</h2>
+          <p id="countText" class="muted"></p>
+        </div>
+        <div class="filters">
+          <div class="chips" id="typeChips" role="group" aria-label="Tipe motor"></div>
+          <div class="filters__row">
+            <label class="field"><span>Merek</span><select id="fBrand"><option value="">Semua merek</option></select></label>
+            <label class="field"><span>Harga maks.</span><select id="fPrice">
+              <option value="">Semua harga</option><option value="12000000">≤ Rp12 jt</option><option value="18000000">≤ Rp18 jt</option><option value="25000000">≤ Rp25 jt</option>
+            </select></label>
+            <label class="field"><span>Tahun min.</span><select id="fYear"><option value="">Semua tahun</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option><option>2022</option></select></label>
+            <label class="field"><span>Urutkan</span><select id="fSort">
+              <option value="new">Terbaru masuk</option><option value="low">Harga terendah</option><option value="km">Kilometer terendah</option><option value="year">Tahun termuda</option>
+            </select></label>
+          </div>
+        </div>
+        <div class="grid" id="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="inspect" id="inspeksi">
+      <div class="wrap inspect__in">
+        <div>
+          <p class="eyebrow">Inspeksi</p>
+          <h2>Yang kami periksa sebelum unit dipajang</h2>
+          <p class="muted">Catatan inspeksi tiap unit ditulis di halaman detailnya. Kalau ada lecet atau komponen yang sudah diganti, kamu tahu sebelum datang.</p>
+        </div>
+        <ol class="checklist">
+          <li><b>Mesin</b><span>Kompresi, suara, kebocoran oli, asap knalpot, tarikan saat test ride.</span></li>
+          <li><b>Rangka</b><span>Nomor rangka cocok dengan BPKB, tidak ada bekas las atau tabrakan.</span></li>
+          <li><b>Kelistrikan</b><span>Starter, aki, lampu, klakson, panel instrumen.</span></li>
+          <li><b>Kaki-kaki</b><span>Rem, ketebalan ban, suspensi depan & belakang, rantai atau CVT.</span></li>
+          <li><b>Body</b><span>Cover body, cat, spion, jok. Lecet dicatat, bukan disembunyikan.</span></li>
+          <li><b>Surat</b><span>STNK & BPKB asli, pajak, dan kecocokan data di Samsat.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sell" id="jual">
+      <div class="wrap sell__in">
+        <div>
+          <p class="eyebrow">Jual / tukar tambah</p>
+          <h2>Punya motor yang mau dijual?</h2>
+          <p class="muted">Isi data motormu, admin akan memberi kisaran harga dan jadwal inspeksi. Bisa juga ditukar dengan unit di showroom.</p>
+        </div>
+        <form class="form" id="sellForm" novalidate>
+          <div class="two">
+            <label class="field"><span>Merek & tipe</span><input id="s-model" placeholder="Mis. Honda Vario 125" /></label>
+            <label class="field"><span>Tahun</span><input id="s-year" inputmode="numeric" placeholder="2020" /></label>
+          </div>
+          <div class="two">
+            <label class="field"><span>Kilometer</span><input id="s-km" inputmode="numeric" placeholder="25000" /></label>
+            <label class="field"><span>Keperluan</span><select id="s-mode"><option>Jual putus</option><option>Tukar tambah</option></select></label>
+          </div>
+          <label class="field"><span>Nama</span><input id="s-name" autocomplete="name" /></label>
+          <p class="err" id="sellErr" hidden></p>
+          <button class="btn btn--blue" type="submit">Minta penawaran</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrap faq__in">
+        <div><p class="eyebrow">FAQ</p><h2>Sebelum datang ke showroom</h2></div>
+        <div id="faqList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <b>Lajur Motor</b>
+      <p id="footInfo"></p>
+      <p class="foot__note">Ilustrasi motor dibuat untuk website ini dan bukan foto unit. Nama merek & model adalah milik pemiliknya masing-masing.</p>
+    </div>
+  </footer>
+
+  <div class="layer" id="unitLayer" hidden>
+    <div class="layer__bg" data-close></div>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="uTitle">
+      <button class="x" type="button" data-close aria-label="Tutup">×</button>
+      <div id="unitBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
